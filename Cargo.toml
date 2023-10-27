@@ -1,0 +1,9 @@
+[package]
+name = "ethstag"
+version = "0.1.0"
+authors = ["J. O. Makar <jomakar@gmail.com>"]
+edition = "2021"
+repository = "https://github.com/jo-makar/ethstag"
+
+[dependencies]
+lazy_static = "1.4.0"
