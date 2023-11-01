@@ -29,7 +29,7 @@ with open(pathlib.Path(__file__).parent / 'bootnodes.rs', 'w') as file:
     file.write('use std::collections::HashMap;\n')
     file.write('\n')
     file.write('lazy_static::lazy_static! {\n')
-    file.write("    static ref BOOTNODES: HashMap<&'static str, Vec<&'static str>> = HashMap::from([\n")
+    file.write("    pub static ref BOOTNODES: HashMap<&'static str, Vec<&'static str>> = HashMap::from([\n")
 
     for network, bootnodes in bootnodes.items():
         file.write(f'        ("{network}",\n')

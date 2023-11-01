@@ -4,5 +4,5 @@ set -o errexit
 
 cargo fmt --check
 
-src/bootnodes.py
-git add src/bootnodes.rs
+src/execution/bootnodes.py
+git add src/execution/bootnodes.rs

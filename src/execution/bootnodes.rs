@@ -1,7 +1,7 @@
 use std::collections::HashMap;
 
 lazy_static::lazy_static! {
-    static ref BOOTNODES: HashMap<&'static str, Vec<&'static str>> = HashMap::from([
+    pub static ref BOOTNODES: HashMap<&'static str, Vec<&'static str>> = HashMap::from([
         ("mainnet",
           vec![
             "enode://d860a01f9722d78051619d1e2351aba3f43f943f6f00718d1b9baa4101932a1f5011f16bb2b1bb35db20d6fe28fa0bf09636d26a87d31de9ec6203eeedb1f666@18.138.108.67:30303",
